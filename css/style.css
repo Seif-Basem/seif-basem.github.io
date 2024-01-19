@@ -412,6 +412,31 @@ header nav .github:hover i{
   border-radius: 15px;
 }
 
+.info .content .four{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.info .content .four .present{
+  background-color: #3a3a3a;
+  border-radius: 10px;
+}
+.info .content .four .present iframe{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+}
+.info .content .four .present .infoo{
+  padding: 2px 0 6px;
+}
+.info .content .four .present h5{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
 .content > div {
   display: none;
 }
