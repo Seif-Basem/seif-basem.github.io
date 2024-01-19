@@ -81,16 +81,10 @@ tabsArray.forEach((ele) => {
   divsArray.forEach((div) => {
       div.style.display = "none";
   });
-  document.querySelector(e.currentTarget.dataset.cont).style.display = "block";
+  document.querySelector(e.currentTarget.dataset.cont).style.display = "flex";
   });
 });
 
-//scroll vertically the websites
-const scrollContainer = document.querySelector(".websites");
-scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
-});
 
 
 AOS.init({
