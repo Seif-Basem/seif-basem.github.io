@@ -85,7 +85,30 @@ tabsArray.forEach((ele) => {
   });
 });
 
+//more btn
+let more = document.getElementById("more");
+let story = document.getElementById("story");
+more.onclick = function(){
+  story.classList.toggle("active");
+}
 
+//btn-top
+let btnTop = document.querySelector(".btn-top");
+window.onscroll = function () {
+  // console.log(this.scrollY);
+    if (this.scrollY >= 1000) {
+      btnTop.classList.add("show");
+    } else {
+      btnTop.classList.remove("show");
+    }
+};
+
+
+//loading
+// var loader = document.getElementById("preloader");
+// window.addEventListener("load", function(){
+//     loader.style.display = "none";
+// });
 
 AOS.init({
   duration: 1200
