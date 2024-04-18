@@ -74,14 +74,21 @@ let divsArray = Array.from(divs);
 tabsArray.forEach((ele) => {
   ele.addEventListener("click", function (e) {
   // console.log(ele);
-  tabsArray.forEach((ele) => {
-      ele.classList.remove("active");
-  });
-  e.currentTarget.classList.add("active");
-  divsArray.forEach((div) => {
-      div.style.display = "none";
-  });
-  document.querySelector(e.currentTarget.dataset.cont).style.display = "flex";
+  if (!e.currentTarget.classList.contains("active")) {
+    tabsArray.forEach((ele) => {
+        ele.classList.remove("active");
+    });
+    e.currentTarget.classList.add("active");
+    divsArray.forEach((div) => {
+        div.style.display = "none";
+    });
+    // document.querySelector(e.currentTarget.dataset.cont).style.display = "flex";
+    document.querySelector(e.currentTarget.dataset.cont).style.display = "flex";
+  } else {
+    // If the clicked tab is already active, hide its corresponding content
+    e.currentTarget.classList.remove("active");
+    document.querySelector(e.currentTarget.dataset.cont).style.display = "none";
+  }
   });
 });
 

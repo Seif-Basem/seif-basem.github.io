@@ -265,6 +265,14 @@ header nav .github:hover i{
     font-size: 18px;
   }
 }
+.info .content .one .about{
+  background-color: #212121;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 7px -7px 15px 0px black;
+  border-left: 1px solid rgb(255 255 255 / 15%);
+  border-bottom: 1px solid rgb(255 255 255 / 15%);
+}
 .info .content .one .more{
   text-decoration: underline;
   display: inline;
@@ -536,4 +544,8 @@ footer{
 footer span{
   color: #51a484;
   font-weight: 500;
+}
+
+.info .content .one.fflex{
+  display: flex;
 }
